@@ -11,4 +11,6 @@ router.post('/post',studentPost);
 const {studentUpdate}=require('../controllers/studentUpdate');
 router.put('/update/:id', studentUpdate);
 
+const {studentDelete}=require('../controllers/studentDelete');
+router.delete('/delete/:id', studentDelete);
 module.exports = router;
