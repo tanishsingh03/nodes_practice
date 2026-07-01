@@ -8,4 +8,7 @@ router.get('/:id', getStudentbyId);
 const {studentPost}=require('../controllers/studentPost');
 router.post('/post',studentPost);
 
+const {studentUpdate}=require('../controllers/studentUpdate');
+router.put('/update/:id', studentUpdate);
+
 module.exports = router;
